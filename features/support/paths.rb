@@ -1,15 +1,9 @@
 module Paths
   def path_to(page_name)
     case page_name
-      
-      when /modus home page/i
-        @domain + ''
-
-     when /google page/i
-       'http://google.com'
-
-         when /modus training page/i
-           @domain + '/training'
+             
+      when /ess4 login page/i
+           @ess4 + ''
     end
   end
 end

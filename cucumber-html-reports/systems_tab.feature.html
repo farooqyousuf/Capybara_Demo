@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Cucumber-JVM Html Reports - Feature: Verify all System tab/pages work properly </title>
+	<link rel="stylesheet" href="blue/css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/skin/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/960.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/reset.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="blue/css/text.css" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="blue/favicon.ico" />
+    <style>
+    .CodeMirror-scroll {
+      height: auto;
+      overflow-y: hidden;
+      overflow-x: auto;
+    }
+
+.feature-keyword{font-weight:bold;}
+.feature-description{padding-left:15px;font-style:italic;background-color:beige;}
+.feature-role{font-weight:bold;}
+.feature-action{font-weight:bold;}
+.feature-value{font-weight:bold;}
+.feature-tags{padding-top:10px;padding-left:15px;color:darkblue;}
+.scenario-keyword{font-weight:bold;padding-left:15px;}
+.scenario-scenario_name{padding-left:15px;}
+.step-keyword{font-weight:bold;padding-left:50px;}
+.step-error-message{background-color:#FFEEEE;padding-left:50px;border: 1px solid #D88A8A;}
+.passed{background-color:#C5D88A;}
+.failed{background-color:#D88A8A;}
+.skipped{background-color:#2DEAEC;}
+.undefined{background-color: #ebcc81;}
+
+table.stats-table {
+color:black;
+border-width: 1px;
+border-spacing: 2px;
+border-style: outset;
+border-color: gray;
+border-collapse: collapse;
+background-color: white;
+}
+table.stats-table th {
+color:black;
+border-width: 1px;
+padding: 5px;
+border-style: inset;
+border-color: gray;
+background-color: #66CCEE;
+-moz-border-radius: ;
+}
+table.stats-table td {
+color:black;
+text-align: center;
+border-width: 1px;
+padding: 5px;
+border-style: inset;
+border-color: gray;
+background-color: white;
+-moz-border-radius: ;
+}
+
+table.data-table {
+    color: black;
+    border-width: 1px;
+    border-spacing: 2px;
+    border-style: outset;
+    border-color: #d6d6d6;
+    border-collapse: collapse;
+    background-color: beige;
+}
+table.data-table th {
+    color:black;
+    border-width: 1px;
+    padding: 5px;
+    border-style: inset;
+    border-color: #d6d6d6;
+    background-color: #66CCEE;
+}
+table.data-table td {
+    color:black;
+    text-align: center;
+    border-width: 1px;
+    padding: 5px;
+    border-style: inset;
+    border-color: #d6d6d6;
+    background-color: beige;
+}
+
+.data {
+   padding-left:50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.output-data {
+    padding-left:50px;
+    background-color: beige;
+}
+</style>
+
+</head>
+<body id="top">
+	<div id="fullwidth_header">
+		<div class="container_12">
+			<h1 class="grid_4 logo"><a href="feature-overview.html" class='ie6fix'>Cucumber</a></h1>
+			<div class="grid_6" id="nav">
+				<ul>
+                    					<li><a href="tag-overview.html">Tag Overview</a></li>
+					<li><a href="feature-overview.html">Feature Overview</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="fullwidth_gradient">
+		<div class="container_12">
+			<div class="grid_9 heading">
+				<h2 id="feature-title">Feature Result for Build: 2013-11-05 17:08:38</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container_12">
+		<div class="grid_12">
+
+            <div>
+                <table class="stats-table">
+                    <tr>
+                        <th></th>
+                        <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+                        <th id="stats-header-steps" colspan="5">Steps</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th id="stats-header-feature">Feature</th>
+                        <th id="stats-header-scenarios-total">Total</th>
+                        <th id="stats-header-scenarios-passed">Passed</th>
+                        <th id="stats-header-scenarios-failed">Failed</th>
+                        <th id="stats-header-steps-total">Total</th>
+                        <th id="stats-header-steps-passed" style="background-color:#C5D88A;">Passed</th>
+                        <th id="stats-header-steps-failed" style="background-color:#D88A8A;">Failed</th>
+                        <th id="stats-header-steps-skipped" style="background-color:#2DEAEC;">Skipped</th>
+                        <th id="stats-header-steps-pending" style="background-color:#ebcc81;">Pending</th>
+                        <th id="stats-header-duration">Duration</th>
+                        <th id="stats-header-status">Status</th>
+                    </tr>
+
+                    
+                    <tr>
+                        <td><a id="stats-Verify all System tab/pages work properly" href="systems_tab.feature.html">Verify all System tab/pages work properly</a></td>
+                        <td id="stats-number-scenarios-Verify all System tab/pages work properly">4</td>
+                        <td id="stats-number-scenarios-passed-Verify all System tab/pages work properly">3</td>
+                        <td id="stats-number-scenarios-failed-Verify all System tab/pages work properly">1</td>
+                        <td id="stats-number-steps-Verify all System tab/pages work properly">47</td>
+                        <td id="stats-number-steps-passed-Verify all System tab/pages work properly">45</td>
+                        <td id="stats-number-steps-failed-Verify all System tab/pages work properly">1</td>
+                        <td id="stats-number-steps-skipped-Verify all System tab/pages work properly">1</td>
+                        <td id="stats-number-steps-pending-Verify all System tab/pages work properly">0</td>
+                        <td id="stats-duration-Verify all System tab/pages work properly">50 secs and 526 ms</td>
+                        <td id="stats-status-Verify all System tab/pages work properly" style="background-color: #D88A8A;">failed</td></tr>
+
+                </table>
+
+            </div>
+
+		<div style="color:black;">
+
+            <div class="feature-tags">@selenium</div>
+            <div class="failed"><div class="feature-line"><span class="feature-keyword">Feature:</span> Verify all System tab/pages work properly</div></div>
+            
+
+                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Background: </span></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I am on the "ess4 login page"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the username textfield with "ess@echo360.com"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the password textfield with "$taRbuck$"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "login-btn" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "PageLink_5" link</span></div>
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Scenario: </span> <span class="scenario-name">Verify System Admin CAN update Licenses</span></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I am on the "ess4 login page"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the username textfield with "ess@echo360.com"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the password textfield with "$taRbuck$"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "login-btn" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "PageLink_5" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Licensing" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Update" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I should see the text "Licensing information was updated successfully."</span></div>
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Scenario: </span> <span class="scenario-name">Verify System Admin CAN access Assign Room Licenses page using Room Assignments button</span></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I am on the "ess4 login page"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the username textfield with "ess@echo360.com"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the password textfield with "$taRbuck$"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "login-btn" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "PageLink_5" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Licensing" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Room Assignments" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I should see the text "Assign Room Licenses"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I should be on the "Assign Room Licenses page"</span></div>
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="passed"><span class="scenario-keyword">Scenario: </span> <span class="scenario-name">Verify System Admin CAN assign or remove licenses from ALL Rooms listed on the Assign Room Licenses page</span></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I am on the "ess4 login page"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the username textfield with "ess@echo360.com"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the password textfield with "$taRbuck$"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "login-btn" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "PageLink_5" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Licensing" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Room Assignments" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I should see the text "Assign Room Licenses"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I should be on the "Assign Room Licenses page"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I should select the first element in the dropdown "licenseSelection"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "All" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Save" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I should see the text "The item has been saved."</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "None" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Save" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I should see the text "The item has been saved."</span></div>
+                                      <div class="output-data"></div>
+                                            <div class="feature-tags"></div>
+                <div class="failed"><span class="scenario-keyword">Scenario: </span> <span class="scenario-name">System Admin CAN access Assign Presenter Licenses page using Presenter Assignments button</span></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I am on the "ess4 login page"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the username textfield with "ess@echo360.com"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I fill in the password textfield with "$taRbuck$"</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "login-btn" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "PageLink_5" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Licensing" link</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="passed"><span class="step-keyword">*  </span><span class="step-name">I click on the "Room Assignments" button</span></div>
+                                      <div class="output-data"></div>
+                                  <div class="failed"><span class="step-keyword">*  </span><span class="step-name">I should see the text "Manage  Presenter Licenses"</span><div class="step-error-message"><pre>expected to find text "Manage Presenter Licenses" in "Echoes Downloads Schedule Monitor Reports Configuration System System Settings Security Device Defaults Certificates Trusted Systems Hosted Services System Indexes Licensing Send Feedback | Help Licensing > Assign Room Licenses Assign Room Licenses License : All License[name=2 channel PRO 2012-04-18-001926; expires=2015-03-04T00:00:00.000Z] License[name=Product License Software Capture, ID 2013-10-22-004623, Product(s): Podcast, Enhanced Podcast, Vodcast, Rich Media Audio; expires=2016-08-10T00:00:00.000Z] Total : 30 Assigned : 1 Available : 29 Room Organization Licensed Dulles: Harris, Cubicle-x Echo360 Product License Software Capture, ID 2013-10-22-004623, Product(s): Podcast, Enhanced Podcast, Vodcast, Rich Media Audio Dulles: Harris, dz_cc_update1_i5 Echo360 Dulles: Harris, DZ_QA_local_i7_CC_update1 Echo360 Dulles: Harris, Empty Room Echo360 Dulles: Harris, HD Capture Room Echo360 Dulles: Harris, الغرفة الدولية Echo360 EchoCampus: EchoBuilding, SCHD Echo360 SCHD Room: SCHD Building, SCHD Room Echo360 shruthi: shruthi, Shruthi CC for deletion Echo360 / shruthi West Coast: Seal Beach, Patio Echo360 EchoSystem v. 5.3.2013-10-28.1 ess@echo360.com | Logout" (RSpec::Expectations::ExpectationNotMetError)
+./features/step_definitions/steps.rb:18:in `/^I should see the text "(.*?)"$/'
+features/systems_tab.feature:38:in `* I should see the text "Manage  Presenter Licenses"'</pre></div></div>
+                                      <div class="output-data"></div>
+                                  <div class="skipped"><span class="step-keyword">*  </span><span class="step-name">I should be on the "Manage Presenter Licenses page"</span></div>
+                                      <div class="output-data"></div>
+                            
+	</div>
+	</div>
+
+
+	<div class="container_12">
+		<div class="grid_12 hr"></div>
+		<div class="grid_12 footer">
+            <p style="text-align:center;">Cucumber-JVM Jenkins Report Plugin - version: cucumber-reporting-0.0.21 - 05-11-2013 17:08:38</p>
+		</div>
+	</div>
+	<div class="clear"></div>
+</body>

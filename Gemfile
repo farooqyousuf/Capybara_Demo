@@ -1,8 +1,11 @@
 source 'https://rubygems.org'
 
 gem 'cucumber'
-gem 'selenium-webdriver'
-#gem 'rspec'
-gem 'faker'
+gem 'rspec'
 gem 'thor'
 gem 'spork'
+gem 'capybara'
+gem 'turnip_formatter'
+gem 'turnip'
+gem 'selenium-webdriver'
+gem 'poltergeist', ">= 1.4.0"

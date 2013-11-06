@@ -1,21 +1,17 @@
 [
   {
     "keyword": "Feature",
-    "name": "Demo Scenarios for ESS",
+    "name": "Verify all System tab/pages work properly",
     "line": 2,
     "description": "",
     "tags": [
       {
-        "name": "@mission_critical_production",
-        "line": 1
-      },
-      {
-        "name": "@credentials",
+        "name": "@selenium",
         "line": 1
       }
     ],
-    "id": "demo-scenarios-for-ess",
-    "uri": "features/credentials_demo.feature",
+    "id": "verify-all-system-tab/pages-work-properly",
+    "uri": "features/systems_tab.feature",
     "elements": [
       {
         "keyword": "Background",
@@ -25,1237 +21,890 @@
         "type": "background",
         "steps": [
           {
-            "keyword": "Given ",
-            "name": "I am on the ess4 login page",
+            "keyword": "* ",
+            "name": "I am on the \"ess4 login page\"",
             "line": 5,
             "match": {
               "arguments": [
                 {
-                  "offset": 12,
+                  "offset": 13,
                   "val": "ess4 login page"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:12"
+              "location": "features/step_definitions/steps.rb:1"
             },
             "result": {
-              "status": "failed",
-              "error_message": "undefined method `+' for nil:NilClass (NoMethodError)\n./features/support/paths.rb:6:in `path_to'\n./features/step_definitions/selenium_webdriver.rb:13:in `/^I am on the (.+)/'\nfeatures/credentials_demo.feature:5:in `Given I am on the ess4 login page'",
-              "duration": 1652000
+              "status": "passed",
+              "duration": 3368457000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I fill in the username textfield with \"ess@echo360.com\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 39,
+                  "val": "ess@echo360.com"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1405219000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I fill in the password textfield with \"$taRbuck$\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 39,
+                  "val": "$taRbuck$"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 129814000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"login-btn\" button",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "login-btn"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1283972000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"PageLink_5\" link",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "PageLink_5"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 648394000
             }
           }
         ]
       },
       {
-        "comments": [
-          {
-            "value": "#Scenario: Testing valid login and logout combinations  ",
-            "line": 7
-          }
-        ],
         "keyword": "Scenario",
-        "name": "Testing login and logout for instructor",
-        "line": 8,
+        "name": "Verify System Admin CAN update Licenses",
+        "line": 11,
         "description": "",
-        "id": "demo-scenarios-for-ess;testing-login-and-logout-for-instructor",
+        "id": "verify-all-system-tab/pages-work-properly;verify-system-admin-can-update-licenses",
         "type": "scenario",
         "steps": [
           {
-            "keyword": "Given ",
-            "name": "I am on the ess4 login page",
+            "keyword": "* ",
+            "name": "I am on the \"ess4 login page\"",
             "line": 5,
             "match": {
               "arguments": [
                 {
-                  "offset": 12,
+                  "offset": 13,
                   "val": "ess4 login page"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:12"
+              "location": "features/step_definitions/steps.rb:1"
             },
             "result": {
-              "status": "failed",
-              "error_message": "undefined method `+' for nil:NilClass (NoMethodError)\n./features/support/paths.rb:6:in `path_to'\n./features/step_definitions/selenium_webdriver.rb:13:in `/^I am on the (.+)/'\nfeatures/credentials_demo.feature:5:in `Given I am on the ess4 login page'",
-              "duration": 294000
+              "status": "passed",
+              "duration": 254000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I fill in \"j_username\" with \"nr.instructor\"",
+            "keyword": "* ",
+            "name": "I fill in the username textfield with \"ess@echo360.com\"",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 39,
+                  "val": "ess@echo360.com"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19710000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I fill in the password textfield with \"$taRbuck$\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 39,
+                  "val": "$taRbuck$"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"login-btn\" button",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "login-btn"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 180000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"PageLink_5\" link",
             "line": 9,
             "match": {
               "arguments": [
                 {
-                  "offset": 11,
-                  "val": "j_username"
-                },
-                {
-                  "offset": 29,
-                  "val": "nr.instructor"
+                  "offset": 16,
+                  "val": "PageLink_5"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
+              "location": "features/step_definitions/steps.rb:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 669000
+              "status": "passed",
+              "duration": 179000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I fill in \"j_password\" with \"password\"",
-            "line": 10,
+            "keyword": "* ",
+            "name": "I click on the \"Licensing\" link",
+            "line": 12,
             "match": {
               "arguments": [
                 {
-                  "offset": 11,
-                  "val": "j_password"
-                },
-                {
-                  "offset": 29,
-                  "val": "password"
+                  "offset": 16,
+                  "val": "Licensing"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
+              "location": "features/step_definitions/steps.rb:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 558000
+              "status": "passed",
+              "duration": 385362000
             }
           },
           {
-            "keyword": "When ",
-            "name": "I click_on \"login-btn\" \"id\"",
-            "line": 11,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "login-btn"
-                },
-                {
-                  "offset": 24,
-                  "val": "id"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 598000
-            }
-          },
-          {
-            "comments": [
-              {
-                "value": "#Then I xpath \"ajfdl\" \"akldfja\"",
-                "line": 12
-              }
-            ],
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/app\" page",
+            "keyword": "* ",
+            "name": "I click on the \"Update\" button",
             "line": 13,
             "match": {
               "arguments": [
                 {
                   "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/app"
+                  "val": "Update"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
+              "location": "features/step_definitions/steps.rb:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 805000
+              "status": "passed",
+              "duration": 1617538000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "the page title should be \"Echoes - EchoSystem Server\"",
+            "keyword": "* ",
+            "name": "I should see the text \"Licensing information was updated successfully.\"",
             "line": 14,
             "match": {
               "arguments": [
                 {
-                  "offset": 26,
-                  "val": "Echoes - EchoSystem Server"
+                  "offset": 23,
+                  "val": "Licensing information was updated successfully."
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
+              "location": "features/step_definitions/steps.rb:17"
             },
             "result": {
-              "status": "skipped",
-              "duration": 969000
+              "status": "passed",
+              "duration": 274377000
             }
-          },
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Verify System Admin CAN access Assign Room Licenses page using Room Assignments button",
+        "line": 16,
+        "description": "",
+        "id": "verify-all-system-tab/pages-work-properly;verify-system-admin-can-access-assign-room-licenses-page-using-room-assignments-button",
+        "type": "scenario",
+        "steps": [
           {
-            "keyword": "When ",
-            "name": "I click_on \"logout\" \"id\"",
-            "line": 15,
+            "keyword": "* ",
+            "name": "I am on the \"ess4 login page\"",
+            "line": 5,
             "match": {
               "arguments": [
                 {
-                  "offset": 12,
-                  "val": "logout"
-                },
-                {
-                  "offset": 21,
-                  "val": "id"
+                  "offset": 13,
+                  "val": "ess4 login page"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
+              "location": "features/step_definitions/steps.rb:1"
             },
             "result": {
-              "status": "skipped",
-              "duration": 674000
+              "status": "passed",
+              "duration": 526367000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "the page title should be \"Welcome to the EchoSystem Server\"",
-            "line": 16,
+            "keyword": "* ",
+            "name": "I fill in the username textfield with \"ess@echo360.com\"",
+            "line": 6,
             "match": {
               "arguments": [
                 {
-                  "offset": 26,
-                  "val": "Welcome to the EchoSystem Server"
+                  "offset": 39,
+                  "val": "ess@echo360.com"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
+              "location": "features/step_definitions/steps.rb:5"
             },
             "result": {
-              "status": "skipped",
-              "duration": 667000
+              "status": "passed",
+              "duration": 166692000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/login.jsp\" page",
+            "keyword": "* ",
+            "name": "I fill in the password textfield with \"$taRbuck$\"",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 39,
+                  "val": "$taRbuck$"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67423000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"login-btn\" button",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "login-btn"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1076512000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"PageLink_5\" link",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "PageLink_5"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 630694000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"Licensing\" link",
             "line": 17,
             "match": {
               "arguments": [
                 {
                   "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/login.jsp"
+                  "val": "Licensing"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
+              "location": "features/step_definitions/steps.rb:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 841000
+              "status": "passed",
+              "duration": 916227000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"Room Assignments\" button",
+            "line": 18,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "Room Assignments"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 283891000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I should see the text \"Assign Room Licenses\"",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 23,
+                  "val": "Assign Room Licenses"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2071108999
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I should be on the \"Assign Room Licenses page\"",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 20,
+                  "val": "Assign Room Licenses page"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10544000
             }
           }
         ]
       },
       {
         "keyword": "Scenario",
-        "name": "Testing login and logout for admin",
-        "line": 19,
+        "name": "Verify System Admin CAN assign or remove licenses from ALL Rooms listed on the Assign Room Licenses page",
+        "line": 22,
         "description": "",
-        "id": "demo-scenarios-for-ess;testing-login-and-logout-for-admin",
+        "id": "verify-all-system-tab/pages-work-properly;verify-system-admin-can-assign-or-remove-licenses-from-all-rooms-listed-on-the-assign-room-licenses-page",
         "type": "scenario",
         "steps": [
           {
-            "keyword": "Given ",
-            "name": "I am on the ess4 login page",
+            "keyword": "* ",
+            "name": "I am on the \"ess4 login page\"",
             "line": 5,
             "match": {
               "arguments": [
                 {
-                  "offset": 12,
+                  "offset": 13,
                   "val": "ess4 login page"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:12"
+              "location": "features/step_definitions/steps.rb:1"
             },
             "result": {
-              "status": "skipped",
-              "duration": 11741000
+              "status": "passed",
+              "duration": 369359000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I fill in \"j_username\" with \"nr.admin\"",
-            "line": 20,
+            "keyword": "* ",
+            "name": "I fill in the username textfield with \"ess@echo360.com\"",
+            "line": 6,
             "match": {
               "arguments": [
                 {
-                  "offset": 11,
-                  "val": "j_username"
-                },
-                {
-                  "offset": 29,
-                  "val": "nr.admin"
+                  "offset": 39,
+                  "val": "ess@echo360.com"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
+              "location": "features/step_definitions/steps.rb:5"
             },
             "result": {
-              "status": "skipped",
-              "duration": 683000
+              "status": "passed",
+              "duration": 806104000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I fill in \"j_password\" with \"password\"",
-            "line": 21,
+            "keyword": "* ",
+            "name": "I fill in the password textfield with \"$taRbuck$\"",
+            "line": 7,
             "match": {
               "arguments": [
                 {
-                  "offset": 11,
-                  "val": "j_password"
-                },
-                {
-                  "offset": 29,
-                  "val": "password"
+                  "offset": 39,
+                  "val": "$taRbuck$"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
+              "location": "features/step_definitions/steps.rb:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 464000
+              "status": "passed",
+              "duration": 1003357000
             }
           },
           {
-            "keyword": "When ",
-            "name": "I click_on \"login-btn\" \"id\"",
-            "line": 22,
+            "keyword": "* ",
+            "name": "I click on the \"login-btn\" button",
+            "line": 8,
             "match": {
               "arguments": [
                 {
-                  "offset": 12,
+                  "offset": 16,
                   "val": "login-btn"
-                },
-                {
-                  "offset": 24,
-                  "val": "id"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
+              "location": "features/step_definitions/steps.rb:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 526000
+              "status": "passed",
+              "duration": 971312000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/app\" page",
+            "keyword": "* ",
+            "name": "I click on the \"PageLink_5\" link",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "PageLink_5"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3615472000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"Licensing\" link",
             "line": 23,
             "match": {
               "arguments": [
                 {
                   "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/app"
+                  "val": "Licensing"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
+              "location": "features/step_definitions/steps.rb:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 474000
+              "status": "passed",
+              "duration": 4590060000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "the page title should be \"Echoes - EchoSystem Server\"",
+            "keyword": "* ",
+            "name": "I click on the \"Room Assignments\" button",
             "line": 24,
             "match": {
               "arguments": [
                 {
-                  "offset": 26,
-                  "val": "Echoes - EchoSystem Server"
+                  "offset": 16,
+                  "val": "Room Assignments"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
+              "location": "features/step_definitions/steps.rb:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 476000
+              "status": "passed",
+              "duration": 1543224000
             }
           },
           {
-            "keyword": "When ",
-            "name": "I click_on \"logout\" \"id\"",
+            "keyword": "* ",
+            "name": "I should see the text \"Assign Room Licenses\"",
             "line": 25,
             "match": {
               "arguments": [
                 {
-                  "offset": 12,
-                  "val": "logout"
-                },
-                {
-                  "offset": 21,
-                  "val": "id"
+                  "offset": 23,
+                  "val": "Assign Room Licenses"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
+              "location": "features/step_definitions/steps.rb:17"
             },
             "result": {
-              "status": "skipped",
-              "duration": 492000
+              "status": "passed",
+              "duration": 812528000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "the page title should be \"Welcome to the EchoSystem Server\"",
+            "keyword": "* ",
+            "name": "I should be on the \"Assign Room Licenses page\"",
             "line": 26,
             "match": {
               "arguments": [
                 {
-                  "offset": 26,
-                  "val": "Welcome to the EchoSystem Server"
+                  "offset": 20,
+                  "val": "Assign Room Licenses page"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
+              "location": "features/step_definitions/steps.rb:29"
             },
             "result": {
-              "status": "skipped",
-              "duration": 466000
+              "status": "passed",
+              "duration": 305561000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/login.jsp\" page",
+            "keyword": "* ",
+            "name": "I should select the first element in the dropdown \"licenseSelection\"",
             "line": 27,
             "match": {
               "arguments": [
                 {
-                  "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/login.jsp"
+                  "offset": 51,
+                  "val": "licenseSelection"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
+              "location": "features/step_definitions/steps.rb:33"
             },
             "result": {
-              "status": "skipped",
-              "duration": 476000
+              "status": "passed",
+              "duration": 3362002000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"All\" link",
+            "line": 28,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "All"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2977175000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"Save\" button",
+            "line": 29,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "Save"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2140971000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I should see the text \"The item has been saved.\"",
+            "line": 30,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 23,
+                  "val": "The item has been saved."
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 552435000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"None\" link",
+            "line": 31,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "None"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 364798000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I click on the \"Save\" button",
+            "line": 32,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 16,
+                  "val": "Save"
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3887349000
+            }
+          },
+          {
+            "keyword": "* ",
+            "name": "I should see the text \"The item has been saved.\"",
+            "line": 33,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 23,
+                  "val": "The item has been saved."
+                }
+              ],
+              "location": "features/step_definitions/steps.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 401908000
             }
           }
         ]
       },
       {
         "keyword": "Scenario",
-        "name": "Testing login and logout for avtech",
-        "line": 29,
+        "name": "System Admin CAN access Assign Presenter Licenses page using Presenter Assignments button",
+        "line": 35,
         "description": "",
-        "id": "demo-scenarios-for-ess;testing-login-and-logout-for-avtech",
+        "id": "verify-all-system-tab/pages-work-properly;system-admin-can-access-assign-presenter-licenses-page-using-presenter-assignments-button",
         "type": "scenario",
         "steps": [
           {
-            "keyword": "Given ",
-            "name": "I am on the ess4 login page",
+            "keyword": "* ",
+            "name": "I am on the \"ess4 login page\"",
             "line": 5,
             "match": {
               "arguments": [
                 {
-                  "offset": 12,
+                  "offset": 13,
                   "val": "ess4 login page"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:12"
+              "location": "features/step_definitions/steps.rb:1"
             },
             "result": {
-              "status": "skipped",
-              "duration": 179000
+              "status": "passed",
+              "duration": 446967000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I fill in \"j_username\" with \"nr.avtech\"",
-            "line": 30,
+            "keyword": "* ",
+            "name": "I fill in the username textfield with \"ess@echo360.com\"",
+            "line": 6,
             "match": {
               "arguments": [
                 {
-                  "offset": 11,
-                  "val": "j_username"
-                },
-                {
-                  "offset": 29,
-                  "val": "nr.avtech"
+                  "offset": 39,
+                  "val": "ess@echo360.com"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
+              "location": "features/step_definitions/steps.rb:5"
             },
             "result": {
-              "status": "skipped",
-              "duration": 638000
+              "status": "passed",
+              "duration": 378977000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I fill in \"j_password\" with \"password\"",
-            "line": 31,
+            "keyword": "* ",
+            "name": "I fill in the password textfield with \"$taRbuck$\"",
+            "line": 7,
             "match": {
               "arguments": [
                 {
-                  "offset": 11,
-                  "val": "j_password"
-                },
-                {
-                  "offset": 29,
-                  "val": "password"
+                  "offset": 39,
+                  "val": "$taRbuck$"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
+              "location": "features/step_definitions/steps.rb:9"
             },
             "result": {
-              "status": "skipped",
-              "duration": 508000
+              "status": "passed",
+              "duration": 244638000
             }
           },
           {
-            "keyword": "When ",
-            "name": "I click_on \"login-btn\" \"id\"",
-            "line": 32,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "login-btn"
-                },
-                {
-                  "offset": 24,
-                  "val": "id"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 519000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/app\" page",
-            "line": 33,
+            "keyword": "* ",
+            "name": "I click on the \"login-btn\" button",
+            "line": 8,
             "match": {
               "arguments": [
                 {
                   "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/app"
+                  "val": "login-btn"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
+              "location": "features/step_definitions/steps.rb:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 474000
+              "status": "passed",
+              "duration": 268062000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "the page title should be \"Echoes - EchoSystem Server\"",
-            "line": 34,
+            "keyword": "* ",
+            "name": "I click on the \"PageLink_5\" link",
+            "line": 9,
             "match": {
               "arguments": [
                 {
-                  "offset": 26,
-                  "val": "Echoes - EchoSystem Server"
+                  "offset": 16,
+                  "val": "PageLink_5"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
+              "location": "features/step_definitions/steps.rb:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 475000
+              "status": "passed",
+              "duration": 2071631000
             }
           },
           {
-            "keyword": "When ",
-            "name": "I click_on \"logout\" \"id\"",
-            "line": 35,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "logout"
-                },
-                {
-                  "offset": 21,
-                  "val": "id"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 504000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "the page title should be \"Welcome to the EchoSystem Server\"",
+            "keyword": "* ",
+            "name": "I click on the \"Licensing\" link",
             "line": 36,
             "match": {
               "arguments": [
                 {
-                  "offset": 26,
-                  "val": "Welcome to the EchoSystem Server"
+                  "offset": 16,
+                  "val": "Licensing"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
+              "location": "features/step_definitions/steps.rb:21"
             },
             "result": {
-              "status": "skipped",
-              "duration": 467000
+              "status": "passed",
+              "duration": 764844000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/login.jsp\" page",
+            "keyword": "* ",
+            "name": "I click on the \"Room Assignments\" button",
             "line": 37,
             "match": {
               "arguments": [
                 {
                   "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/login.jsp"
+                  "val": "Room Assignments"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
+              "location": "features/step_definitions/steps.rb:13"
             },
             "result": {
-              "status": "skipped",
-              "duration": 478000
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "name": "Testing login and logout for guest",
-        "line": 39,
-        "description": "",
-        "id": "demo-scenarios-for-ess;testing-login-and-logout-for-guest",
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "name": "I am on the ess4 login page",
-            "line": 5,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "ess4 login page"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:12"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 322000
+              "status": "passed",
+              "duration": 1232525000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I fill in \"j_username\" with \"nr.guest>\"",
-            "line": 40,
+            "keyword": "* ",
+            "name": "I should see the text \"Manage  Presenter Licenses\"",
+            "line": 38,
             "match": {
               "arguments": [
                 {
-                  "offset": 11,
-                  "val": "j_username"
-                },
-                {
-                  "offset": 29,
-                  "val": "nr.guest>"
+                  "offset": 23,
+                  "val": "Manage  Presenter Licenses"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
+              "location": "features/step_definitions/steps.rb:17"
             },
             "result": {
-              "status": "skipped",
-              "duration": 524000
+              "status": "failed",
+              "error_message": "expected to find text \"Manage Presenter Licenses\" in \"Echoes Downloads Schedule Monitor Reports Configuration System System Settings Security Device Defaults Certificates Trusted Systems Hosted Services System Indexes Licensing Send Feedback | Help Licensing > Assign Room Licenses Assign Room Licenses License : All License[name=2 channel PRO 2012-04-18-001926; expires=2015-03-04T00:00:00.000Z] License[name=Product License Software Capture, ID 2013-10-22-004623, Product(s): Podcast, Enhanced Podcast, Vodcast, Rich Media Audio; expires=2016-08-10T00:00:00.000Z] Total : 30 Assigned : 1 Available : 29 Room Organization Licensed Dulles: Harris, Cubicle-x Echo360 Product License Software Capture, ID 2013-10-22-004623, Product(s): Podcast, Enhanced Podcast, Vodcast, Rich Media Audio Dulles: Harris, dz_cc_update1_i5 Echo360 Dulles: Harris, DZ_QA_local_i7_CC_update1 Echo360 Dulles: Harris, Empty Room Echo360 Dulles: Harris, HD Capture Room Echo360 Dulles: Harris, الغرفة الدولية Echo360 EchoCampus: EchoBuilding, SCHD Echo360 SCHD Room: SCHD Building, SCHD Room Echo360 shruthi: shruthi, Shruthi CC for deletion Echo360 / shruthi West Coast: Seal Beach, Patio Echo360 EchoSystem v. 5.3.2013-10-28.1 ess@echo360.com | Logout\" (RSpec::Expectations::ExpectationNotMetError)\n./features/step_definitions/steps.rb:18:in `/^I should see the text \"(.*?)\"$/'\nfeatures/systems_tab.feature:38:in `* I should see the text \"Manage  Presenter Licenses\"'",
+              "duration": 2531509000
             }
           },
           {
-            "keyword": "Then ",
-            "name": "I fill in \"j_password\" with \"password\"",
-            "line": 41,
+            "keyword": "* ",
+            "name": "I should be on the \"Manage Presenter Licenses page\"",
+            "line": 39,
             "match": {
               "arguments": [
                 {
-                  "offset": 11,
-                  "val": "j_password"
-                },
-                {
-                  "offset": 29,
-                  "val": "password"
+                  "offset": 20,
+                  "val": "Manage Presenter Licenses page"
                 }
               ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
+              "location": "features/step_definitions/steps.rb:29"
             },
             "result": {
               "status": "skipped",
-              "duration": 461000
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I click_on \"login-btn\" \"id\"",
-            "line": 42,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "login-btn"
-                },
-                {
-                  "offset": 24,
-                  "val": "id"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 463000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/app\" page",
-            "line": 43,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/app"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 441000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "the page title should be \"Echoes - EchoSystem Server\"",
-            "line": 44,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 26,
-                  "val": "Echoes - EchoSystem Server"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 485000
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I click_on \"logout\" \"id\"",
-            "line": 45,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "logout"
-                },
-                {
-                  "offset": 21,
-                  "val": "id"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 460000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "the page title should be \"Welcome to the EchoSystem Server\"",
-            "line": 46,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 26,
-                  "val": "Welcome to the EchoSystem Server"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 441000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/login.jsp\" page",
-            "line": 47,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/login.jsp"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 447000
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "name": "Testing login with invalid username",
-        "line": 49,
-        "description": "",
-        "id": "demo-scenarios-for-ess;testing-login-with-invalid-username",
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "name": "I am on the ess4 login page",
-            "line": 5,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "ess4 login page"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:12"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 167000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I fill in \"j_username\" with \"fake_username\"",
-            "line": 50,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 11,
-                  "val": "j_username"
-                },
-                {
-                  "offset": 29,
-                  "val": "fake_username"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 522000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I fill in \"j_password\" with \"password\"",
-            "line": 51,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 11,
-                  "val": "j_password"
-                },
-                {
-                  "offset": 29,
-                  "val": "password"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 467000
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I click_on \"login-btn\" \"id\"",
-            "line": 52,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "login-btn"
-                },
-                {
-                  "offset": 24,
-                  "val": "id"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 664000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should see \"Your user name and/or password is incorrect. Please try again.\"",
-            "line": 53,
-            "match": {
-              "arguments": [
-                {
-                },
-                {
-                  "offset": 14,
-                  "val": "Your user name and/or password is incorrect. Please try again."
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:67"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 519999
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/loginInvalid.jsp\" page",
-            "line": 54,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/loginInvalid.jsp"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 519000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "the page title should be \"Welcome to the EchoSystem Server\"",
-            "line": 55,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 26,
-                  "val": "Welcome to the EchoSystem Server"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 460000
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "name": "Testing login with invalid password",
-        "line": 57,
-        "description": "",
-        "id": "demo-scenarios-for-ess;testing-login-with-invalid-password",
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "name": "I am on the ess4 login page",
-            "line": 5,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "ess4 login page"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:12"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 178000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I fill in \"j_username\" with \"lenin\"",
-            "line": 58,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 11,
-                  "val": "j_username"
-                },
-                {
-                  "offset": 29,
-                  "val": "lenin"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 531000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I fill in \"j_password\" with \"wrong_password\"",
-            "line": 59,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 11,
-                  "val": "j_password"
-                },
-                {
-                  "offset": 29,
-                  "val": "wrong_password"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 533000
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I click_on \"login-btn\" \"id\"",
-            "line": 60,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "login-btn"
-                },
-                {
-                  "offset": 24,
-                  "val": "id"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 8122000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should see \"Your user name and/or password is incorrect. Please try again.\"",
-            "line": 61,
-            "match": {
-              "arguments": [
-                {
-                },
-                {
-                  "offset": 14,
-                  "val": "Your user name and/or password is incorrect. Please try again."
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:67"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 558000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/loginInvalid.jsp\" page",
-            "line": 62,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/loginInvalid.jsp"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 519000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "the page title should be \"Welcome to the EchoSystem Server\"",
-            "line": 63,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 26,
-                  "val": "Welcome to the EchoSystem Server"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 491000
-            }
-          }
-        ]
-      },
-      {
-        "keyword": "Scenario",
-        "name": "Testing login with invalid username",
-        "line": 65,
-        "description": "",
-        "id": "demo-scenarios-for-ess;testing-login-with-invalid-username",
-        "type": "scenario",
-        "steps": [
-          {
-            "keyword": "Given ",
-            "name": "I am on the ess4 login page",
-            "line": 5,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "ess4 login page"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:12"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 198000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I fill in \"j_username\" with \"fake_username\"",
-            "line": 66,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 11,
-                  "val": "j_username"
-                },
-                {
-                  "offset": 29,
-                  "val": "fake_username"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 529000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I fill in \"j_password\" with \"fake_password\"",
-            "line": 67,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 11,
-                  "val": "j_password"
-                },
-                {
-                  "offset": 29,
-                  "val": "fake_password"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:16"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 622000
-            }
-          },
-          {
-            "keyword": "When ",
-            "name": "I click_on \"login-btn\" \"id\"",
-            "line": 68,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 12,
-                  "val": "login-btn"
-                },
-                {
-                  "offset": 24,
-                  "val": "id"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:5"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 518000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should see \"Your user name and/or password is incorrect. Please try again.\"",
-            "line": 69,
-            "match": {
-              "arguments": [
-                {
-                },
-                {
-                  "offset": 14,
-                  "val": "Your user name and/or password is incorrect. Please try again."
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:67"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 510999
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "I should be on \"https://ess4-white.echo360.com:8443/ess/loginInvalid.jsp\" page",
-            "line": 70,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 16,
-                  "val": "https://ess4-white.echo360.com:8443/ess/loginInvalid.jsp"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:82"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 490000
-            }
-          },
-          {
-            "keyword": "Then ",
-            "name": "the page title should be \"Welcome to the EchoSystem Server\"",
-            "line": 71,
-            "match": {
-              "arguments": [
-                {
-                  "offset": 26,
-                  "val": "Welcome to the EchoSystem Server"
-                }
-              ],
-              "location": "features/step_definitions/selenium_webdriver.rb:1"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 505000
+              "duration": 876000
             }
           }
         ]
